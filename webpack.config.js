@@ -6,7 +6,7 @@
  */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WorkboxWebpakcPlugin = require('workbox-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
-        new WorkboxWebpakcPlugin.GenerateSW({
+        new WorkboxWebpackPlugin.GenerateSW({
             skipWaiting: true,
             clientsClaim: true
         }),
